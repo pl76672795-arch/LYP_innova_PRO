@@ -1,0 +1,99 @@
+name: alexander_app
+description: LYP Innova Pro 2.0 - Herramienta avanzada para ingeniería civil en Perú con NTP, OCR, metrados, sync con Firebase, gráficos, notificaciones push y cumplimiento de RNC/NTP/RNE. Ultra potente y escalable.
+
+publish_to: 'none'
+
+version: 2.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+
+  # --- Firebase (versiones actualizadas para estabilidad y compatibilidad NTP) ---
+  firebase_core: ^2.27.0  # Actualizado para Flutter 3.0+
+  firebase_auth: ^4.17.0  # Actualizado
+  cloud_firestore: ^4.16.0  # Actualizado
+  firebase_storage: ^11.6.0
+  google_sign_in: ^6.1.0
+
+  # --- Conectividad y Red ---
+  connectivity_plus: ^6.0.3
+  # http: ^1.2.1  # Comentado: Quita si no usas APIs externas directamente (evita conflictos NTP)
+
+  # --- Geolocalización y Sensores ---
+  geolocator: ^12.0.0
+  sensors_plus: ^5.0.0
+
+  # --- UI/UX y Navegación ---
+  url_launcher: ^6.3.0
+  permission_handler: ^11.3.1
+  flutter_local_notifications: ^17.2.0
+  percent_indicator: ^4.2.2
+
+  # --- Cálculos y Datos ---
+  intl: ^0.20.2  # Corregido: Actualizado para compatibilidad con flutter_localizations NTP
+  excel: ^4.0.3
+  fl_chart: ^0.67.0
+
+  # --- PDF e Impresión (comentado temporalmente para resolver lStar y build rápido) ---
+  pdf: ^3.10.7
+  # printing: ^5.13.0  # Comentado: Quita esta línea para build rápido; agrega después si necesitas PDFs (usamos share_plus en código corregido NTP)
+
+  # --- Base de Datos Local ---
+  sqflite: ^2.3.3
+  shared_preferences: ^2.2.3
+  path_provider: ^2.1.3
+  path: ^1.9.0
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+
+  # --- Cámara, OCR e IA ---
+  camera: ^0.10.5+9
+  image_picker: ^1.1.0
+  google_ml_kit: ^0.18.0
+  google_mlkit_text_recognition: ^0.13.1  # Corregido: Versión válida para OCR NTP
+  google_generative_ai: ^0.4.3
+
+  # --- Utilidades y Estado ---
+  provider: ^6.1.2
+  retry: ^3.1.2
+
+  # --- Seguridad ---
+  flutter_secure_storage: ^9.0.0
+
+  # --- Compartir y Exportar ---
+  share_plus: ^7.0.0
+
+  # --- Splash Screen e Íconos ---
+  flutter_native_splash: ^2.4.0
+  flutter_launcher_icons: ^0.13.1
+
+  # --- Extras Ultra Potentes para Escalabilidad NTP ---
+  cached_network_image: ^3.3.1
+  flutter_svg: ^2.0.9
+  device_info_plus: ^9.1.1
+  package_info_plus: ^9.0.0
+  # image: ^4.1.3  # Agregado comentado: Para compresión de imágenes si se necesita (quitado en código corregido para evitar issues NTP)
+
+  # --- Internacionalización (agregado para generate: true NTP) ---
+  flutter_localizations:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  hive_generator: ^2.0.1
+  build_runner: ^2.4.8
+  # flutter_gen: ^5.4.0  # Agregado comentado: Para generar assets automáticamente (opcional, útil para escalabilidad NTP)
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+  generate: true  # Mantén para localizaciones NTP

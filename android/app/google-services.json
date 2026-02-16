@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "996341507163",
+    "project_id": "lyp-innova-app-7a31f",
+    "storage_bucket": "lyp-innova-app-7a31f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:996341507163:android:cd2e5e225c26751482cb7e",
+        "android_client_info": {
+          "package_name": "com.LYP.innova.Pro"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChLEsB3uBXQP2LTqR-c1WTTNARxDuSpT8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:996341507163:android:78662022c2c7ff3582cb7e",
+        "android_client_info": {
+          "package_name": "com.pylinnova.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChLEsB3uBXQP2LTqR-c1WTTNARxDuSpT8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!-- ========== INFORMACIÓN GENERAL ========== -->
+	<key>CFBundleDevelopmentRegion</key>
+	<string>es_ES</string>
+	
+	<key>CFBundleDisplayName</key>
+	<string>LYP Innova Pro</string>
+	
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	
+	<key>CFBundleName</key>
+	<string>lyp_innova</string>
+	
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	
+	<key>CFBundleShortVersionString</key>
+	<string>$(FLUTTER_BUILD_NAME)</string>
+	
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	
+	<key>CFBundleVersion</key>
+	<string>$(FLUTTER_BUILD_NUMBER)</string>
+	
+	<!-- ========== REQUERIMIENTOS DEL DISPOSITIVO ========== -->
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	
+	<key>MinimumOSVersion</key>
+	<string>12.0</string>
+	
+	<!-- ========== CÁMARA (ML KIT) ========== -->
+	<key>NSCameraUsageDescription</key>
+	<string>LYP Innova necesita acceso a la cámara para escanear texto con inteligencia artificial. Tus fotos no se guardan ni se envían a ningún servidor.</string>
+	
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>camera</string>
+		<string>arkit</string>
+	</array>
+	
+	<!-- ========== ACCESO A FOTOS Y MEDIOS ========== -->
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>LYP Innova necesita acceso a tu librería de fotos para importar documentos y escanearlos.</string>
+	
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>LYP Innova necesita permiso para guardar archivos en tu librería de fotos.</string>
+	
+	<!-- iOS 14+ Photo Library -->
+	<key>PHAccessLevel</key>
+	<string>readwrite</string>
+	
+	<!-- ========== ALMACENAMIENTO Y ARCHIVOS ========== -->
+	<key>NSFileProviderPresenceUsageDescription</key>
+	<string>LYP Innova necesita acceso a tu almacenamiento para guardar y recuperar proyectos.</string>
+	
+	<!-- ========== UBICACIÓN (OPCIONAL) ========== -->
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>LYP Innova puede usar tu ubicación para contexto local de tus escaneos.</string>
+	
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>LYP Innova necesita tu ubicación para funcionalidades avanzadas de geolocalización.</string>
+	
+	<!-- ========== MICRÓFONO (AUNQUE NO SE USA, MEJOR SER EXPLÍCITO) ========== -->
+	<key>NSMicrophoneUsageDescription</key>
+	<string>LYP Innova no requiere acceso al micrófono.</string>
+	
+	<!-- ========== CONTACTOS (PARA COMPARTIR) ========== -->
+	<key>NSContactsUsageDescription</key>
+	<string>Permite compartir documentos escaneados con contactos.</string>
+	
+	<!-- ========== CONFIGURACIÓN DE ESCENAS Y UI ========== -->
+	<key>UIApplicationSceneManifest</key>
+	<dict>
+		<key>UIApplicationSupportsMultipleScenes</key>
+		<false/>
+		<key>UISceneConfigurations</key>
+		<dict>
+			<key>UIWindowSceneSessionRoleApplication</key>
+			<array>
+				<dict>
+					<key>UISceneClassName</key>
+					<string>UIWindowScene</string>
+					<key>UISceneConfigurationName</key>
+					<string>flutter</string>
+					<key>UISceneDelegateClassName</key>
+					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
+					<key>UISceneStoryboardFile</key>
+					<string>Main</string>
+				</dict>
+			</array>
+		</dict>
+	</dict>
+	
+	<!-- ========== EVENTOS DE ENTRADA INDIRECTA ========== -->
+	<key>UIApplicationSupportsIndirectInputEvents</key>
+	<true/>
+	
+	<!-- ========== PANTALLA DE LANZAMIENTO ========== -->
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
+	
+	<key>UIMainStoryboardFile</key>
+	<string>Main</string>
+	
+	<!-- ========== ORIENTACIONES SOPORTADAS ========== -->
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	
+	<!-- ========== ESTILO DE INTERFAZ ========== -->
+	<key>UIUserInterfaceStyle</key>
+	<string>Dark</string>
+	
+	<!-- ========== STATUS BAR ========== -->
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<false/>
+	
+	<key>UIStatusBarStyle</key>
+	<string>UIStatusBarStyleDarkContent</string>
+	
+	<!-- ========== RENDIMIENTO Y OPTIMIZACIÓN ========== -->
+	<key>CADisableMinimumFrameDurationOnPhone</key>
+	<true/>
+	
+	<!-- Habilitar Metal para mejor rendimiento gráfico -->
+	<key>CAMetalLayerEnabled</key>
+	<true/>
+	
+	<!-- ========== ACCESO A RED ========== -->
+	<key>NSBonjourServices</key>
+	<array>
+		<string>_http._tcp</string>
+		<string>_https._tcp</string>
+	</array>
+	
+	<!-- Permitir conexiones inseguras solo para desarrollo local -->
+	<key>NSLocalNetworkUsageDescription</key>
+	<string>LYP Innova necesita acceder a tu red local.</string>
+	
+	<key>NSBonjourServiceTypes</key>
+	<array>
+		<string>_http._tcp</string>
+		<string>_https._tcp</string>
+	</array>
+	
+	<!-- ========== SEGURIDAD Y PRIVACIDAD ========== -->
+	<key>NSAllowsLocalNetworking</key>
+	<true/>
+	
+	<key>NSPrivacyTracking</key>
+	<false/>
+	
+	<key>NSPrivacyTrackingDomains</key>
+	<array/>
+	
+	<!-- ========== CONFIGURACIÓN DE APP DELEGATE ========== -->
+	<key>FlutterEmbedding</key>
+	<string>2</string>
+	
+	<!-- ========== IDIOMA Y LOCALIZACIONES ========== -->
+	<key>CFBundleLocalizations</key>
+	<array>
+		<string>es</string>
+		<string>en</string>
+		<string>pt</string>
+	</array>
+	
+	<!-- ========== ACCESO A SALUD Y FITNESS (SI ES NECESARIO) ========== -->
+	<key>NSHealthShareUsageDescription</key>
+	<string>LYP Innova no accede a tus datos de salud.</string>
+	
+	<!-- ========== OPCIONES AVANZADAS DE FLUTTER ========== -->
+	<key>io.flutter.embedded_views_preview</key>
+	<true/>
+	
+	<!-- Soporte para PDF y documentos -->
+	<key>UTImportedTypeDeclarations</key>
+	<array>
+		<dict>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>com.adobe.pdf</string>
+			</array>
+			<key>UTTypeDescription</key>
+			<string>PDF Document</string>
+			<key>UTTypeIconFiles</key>
+			<array/>
+			<key>UTTypeIdentifier</key>
+			<string>com.adobe.pdf</string>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>com.apple.ostype</key>
+				<string>PDF </string>
+				<key>public.filename-extension</key>
+				<array>
+					<string>pdf</string>
+				</array>
+				<key>public.mime-type</key>
+				<string>application/pdf</string>
+			</dict>
+		</dict>
+	</array>
+	
+	<!-- ========== TIPOS DE DOCUMENTO SOPORTADOS ========== -->
+	<key>CFBundleDocumentTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>pdf</string>
+				<string>PDF</string>
+			</array>
+			<key>CFBundleTypeName</key>
+			<string>PDF Document</string>
+			<key>CFBundleTypeRole</key>
+			<string>Viewer</string>
+			<key>LSItemContentTypes</key>
+			<array>
+				<string>com.adobe.pdf</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>jpg</string>
+				<string>jpeg</string>
+				<string>png</string>
+			</array>
+			<key>CFBundleTypeName</key>
+			<string>Image</string>
+			<key>CFBundleTypeRole</key>
+			<string>Viewer</string>
+			<key>LSItemContentTypes</key>
+			<array>
+				<string>public.image</string>
+			</array>
+		</dict>
+	</array>
+	
+	<!-- ========== SOLICITAR PERMISOS AL INICIO ========== -->
+	<key>SKAdNetworkItems</key>
+	<array/>
+	
+	<!-- ========== VERSIÓN MÍNIMA DE iOS ========== -->
+	<key>GCKReceiverMinVersion</key>
+	<string>12.0</string>
+	
+	<!-- ========== THEME Y COLORES ========== -->
+	<key>UIStatusBarHidden</key>
+	<false/>
+	
+	<key>UIStatusBarHidden~ipad</key>
+	<false/>
+	
+	<!-- ========== CONFIGURACIÓN DE NOTIFICACIONES ========== -->
+	<key>UIApplicationSceneManifestSupportsExternalDisplay</key>
+	<true/>
+	
+</dict>
+</plist>
